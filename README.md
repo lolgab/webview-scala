@@ -9,7 +9,7 @@ In two separate terminals
 Build the frontend first:
 
 ```
-mill -j 0 -w example.frontend.fastOpt
+mill -j 0 -w example.frontend.fastLinkJS
 ```
 
 Then build and run the application:

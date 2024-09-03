@@ -15,7 +15,7 @@ object ApiImpl extends Api {
 
 object Main extends App {
   // read from a file but it can be put in resources as well
-  val js = os.read(os.pwd / "out" / "example" / "frontend" / "fastOpt.dest" / "out.js")
+  val js = os.read(os.pwd / "out" / "example" / "frontend" / "fastLinkJS.dest" / "main.js")
   val html = s"<html><head></head><body><div id=\"app\"><script>${js}</script></body></html>"
   val router = webview.AutowireServer.route[Api](ApiImpl)
   val webView =
